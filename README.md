@@ -5,3 +5,6 @@
 ```
 taskkill /f /t /im pythonw.exe
 ```
+```
+ Get-Process sqlplus | Select-Object Name, Id, StartTime
+```
