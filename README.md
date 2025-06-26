@@ -6,5 +6,9 @@
 taskkill /f /t /im pythonw.exe
 ```
 ```
+Get-CimInstance Win32_Process | Select-Object ProcessId,CommandLine | findstr sqlplus
+```
+
+```
  Get-Process sqlplus | Select-Object Name, Id, StartTime
 ```
