@@ -16,5 +16,8 @@ Get-CimInstance Win32_Process | Select-Object ProcessId,CommandLine | findstr sq
 ## How to get the Wifi password
 ```
 netsh wlan show profiles
+```
+Password is in "Key Content"
+```
 netsh wlan show profile name="MyWifi" key=clear
 ```
