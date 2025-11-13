@@ -12,3 +12,9 @@ Get-CimInstance Win32_Process | Select-Object ProcessId,CommandLine | findstr sq
 ```
  Get-Process sqlplus | Select-Object Name, Id, StartTime
 ```
+
+## How to get the Wifi password
+```
+netsh wlan show profiles
+netsh wlan show profile name="MyWifi" key=clear
+```
