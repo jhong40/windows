@@ -21,3 +21,13 @@ Password is in "Key Content"
 ```
 netsh wlan show profile name="MyWifi" key=clear
 ```
+
+
+## How to set all byte -> 0 in HDD
+```
+diskpart
+list disk
+select disk 0
+detail disk
+clean all
+```
